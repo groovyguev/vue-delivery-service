@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcom to Moghuls Service </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+    <script src="js/vue.js"></script>
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <section id="main">
+        <nav>
+            <div id="side-nav">
+                <!-- Side navingation-->
+        
+                <a href="" class="side-btn">
+                    <i class="fa fa-bars fa-2x"></i>
+                </a>
+                <ul class="side-nav-list">
+                    <li>
+                        <a href="">
+                            Become a partner
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            login
+                        </a>
+                    </li>
+                    <li>
+                        <hr>
+                    </li>
+                    <li>
+                        <a href="">
+        
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        
+            <div id="main-nav" class="pull-right">
+                <ul>
+                    <li>
+                        <a href=""> How It Works </a>
+                    </li>
+                    <li>
+                        <a href=""> Partner With Us </a>
+                    </li>
+                    <li>
+                        <a href="" class="login"> Log in </a>
+                    </li>
+                    
+                    <a href="tel:+237676105287">
+                        <i class="fa fa-mobile fa-2x"></i>
+                        <b>676-105-287</b>
+                    </a>
+                </ul>
+            </div>
+            <div class="logo clear-fixed animated bounceInDown">
+                <img src="images/moghul-logo.png" width="150" alt="">
+            </div>
+        </nav>
+        <!-- Navigavion End-->
+
+        <!-- landing container  -->
+        <div id="sub-main" class=" container clear-fixed">
+            <div class="ext">
+                <div  id="landing" class=" animated bounceInDown col-sm-6 col-sm-offset-3 ">
+                    
+                    <div class="col-sm-12">
+                        <h3 class="">Pick A Service You Require</h3>
+                    </div>
+
+                    <div class="col-sm-12">
+                    <div class="col-md-3 col-xs-6 col-sm-3 ">
+                        <a href="" class="glyph food" v-on:mouseover="msg='Get food from your fevorite restaurant.'">
+                            <sup id="food"> </sup>
+                            <i class="glyph-icon flaticon-restaurant-1"></i>
+                        </a>
+                        <br>
+                    </div>
+                    <div class="col-md-3 col-xs-6 col-sm-3">
+                        <a href="" class="glyph shop" v-on:mouseover="msg='Your household utils (gas, water, etc..) at your doorstep.'">
+                            <sup id="shop"> </sup>
+                            <i class="glyph-icon flaticon-shopping-basket"></i>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-xs-6 col-sm-3">
+                        <a class="glyph clean" href="http://google.com" v-on:mouseover="msg='We will leave your office, Minicite, ceremonial ground spotless.'">
+                            <sup id="clean"> </sup>
+                            <i class=" glyph-icon flaticon-people-2"></i>
+                        </a>
+                        <br>
+                    </div>
+                    <div class="col-md-3 col-xs-6  col-sm-3">
+                        <a href="" class="glyph laundry" v-on:mouseover="msg='Your Dirty Laundry Pickup  and delivery.'">
+                            <sup id="laundry"> </sup>
+                            <i class="glyph-icon flaticon-laundry-1"></i>
+                        </a>
+                    </div><br>
+                    <div class="col-md-12 clear-fixed">
+
+                    </div>
+                    <div class="title clear-fixed">
+                        <p>{{msg}}</p>
+                    </div>
+                </div>
+                    
+                    <div class="input-group ">
+                        <span class="input-group-addon">
+                            <i class="fa fa-location-arrow "></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="House Address, block, Apt#">
+                        <a href="/client/order.html"  class="input-group-addon btn btn-primary btn-block">Go</a>
+                    </div>
+                
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="partners ">
+    </section>
+
+    <section class="footer">
+        <hr>
+        <p> &copy; 2018 Moghul Service Alrights Reserved. </p>
+    </section>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/js.js"></script>
+    
+</body>
+</html>

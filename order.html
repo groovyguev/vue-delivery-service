@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <script src="bower_components/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/selectize.css">
+    <link rel="stylesheet" href="css/intlTelInput.css">
+</head>
+
+<body>
+
+    <div class="container" id="main" style=" padding:10px 20px;">
+
+        <nav>
+            <div id="side-nav">
+                <!-- Side navingation-->
+
+                <a href="" class="side-btn">
+                    <i class="fa tgh fa-bars"></i>
+                </a>
+                <ul class="side-nav-list tghh">
+                    <li>
+                        <a href="">
+                            Become a partner
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Login
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+237676105287" class="text-primary">
+                            <i class="fa fa-phone "></i>
+                            676-105-287</b>
+                        </a>
+                    </li>
+                    <li>
+                        <hr>
+                    </li>
+                    <li>
+                        <a href="">
+                            How it works
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Careers
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            FAQs
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/moghul-logo.png" class="img-responsive" alt="">
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div id="main-nav" class="pull-right">
+                <ul>
+                    <li>
+                        <a href=""> How It Works </a>
+                    </li>
+                    <li>
+                        <a href=""> Partner With Us </a>
+                    </li>
+                    <li>
+                        <a href="" class="login"> Log in </a>
+                    </li>
+                    <li>
+                        <a href="tel:+237676105287" class="text-primary">
+                            <i class="fa fa-phone "></i>
+                            676-105-287</b>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="logo clearfix animated bounceInDown">
+                <img src="images/moghul-logo.png" class="" width="130" alt="">
+            </div>
+        </nav>
+        <!-- Navigavion End-->
+
+        <div class="row">
+            <div class="mg-order  col-sm-4  col-sm-offset-4">
+
+                <div class="mg-header">
+                    <h2>Place Order</h2>
+                    <p class="yellow">
+                        <i class="yellow fa fa-chevron-left text-danger"></i>
+                        <i class="fa fa-smile-o fa-2x animated  tada "></i> Smile For we care!
+                        <i class="yellow fa fa-chevron-right text-danger"></i>
+                    </p>
+                    <br>
+                    <ul class="nav nav-pills ">
+                        <li class="active">
+                            <a data-toggle="pill" href="#food">
+                                <i class="glyph-icon flaticon-restaurant-1"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-toggle="pill" href="#shop">
+                                <i class="glyph-icon flaticon-shopping-basket"></i>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a data-toggle="pill" href="#clean">
+                                <i class="glyph-icon flaticon-people"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-toggle="pill" href="#laundry">
+                                <i class="glyph-icon flaticon-laundry-1"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="tab-content">
+                    <div id="food" class="tab-pane fade in  active">
+
+                        <h3>Food Delivery</h3>
+                        <form class="form">
+                            <input type="text" class="form-control" name="name" id="name" placeholder="What's your name">
+                            <br>
+                            <input type="text" value="" name="address" id="address" class="form-control" placeholder="your address " hidden>
+                            <span id="address-view"  class="text-info"> Address : <b id="addr"></b> <a href="" class="fa fa-edit text-success"></a></span><br><br>
+                            <input class="form-control" id="phone" type="tel" placeholder="Your Phone Number">
+                            <span id="valid-msg" class="hide text-success">✓ Valid</span>
+                            <span id="error-msg" class="hide text-danger">Invalid number</span>
+                            <br>
+                            <br>
+                            <b>Do you have a preferred restaurant(s)?</b>
+                            <div class="form-group">
+
+                                <select id="select-restaurant" multiple="multiple">
+                                    <option value="Any Good Restaurant" selected="">Any Good Restaurant</option>
+                                    <option value="Marays">Marays</option>
+                                    <option value="Twist">Twist</option>
+                                    <option value="Delux">Delux</option>
+                                </select>
+
+                            </div>
+                            <b>
+                                Tell us what you need ?
+                                <p>
+                                <small>
+                                    <span class="text-primary"> include any special instructions that'll help us to fulfill your order like(
+                                        <i class="badge">Chicken Chips</i>
+                                        <i class="badge">2 small bottles of Cocacola</i>
+                                        <i class="badge">2 plates of Fried Rice</i> </span>
+                                </small></p>
+                            </b>
+
+                            <input name="requrements" id="requirements" placeholder="2 pepsi cans, Ndoleh and Plantains">
+                            <br>
+                            <button class="btn  btn-circle btn-primary btn-block" onclick="results()" id="dd">Moghul</button>
+                        </form>
+
+                    </div>
+                    <div id="shop" class="tab-pane fade">
+                        <h3> Shop </h3>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.
+                        </p>
+                    </div>
+                    <div id="clean" class="tab-pane fade">
+                        <h3> Cleaning </h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                            totam rem aperiam.</p>
+                    </div>
+                    <div id="laundry" class="tab-pane fade">
+                        <h3> Laundry </h3>
+                        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="footer">
+            <hr>
+            <p> &copy; 2018 Moghul Service Alrights Reserved. </p>
+        </section>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/intlTelInput.js"></script>
+    <script src="js/selectize.js"></script>
+    <script>
+        $('.side-btn').on('click', function(e){
+            e.preventDefault();
+            if($('.side-nav-list').hasClass('tghh')){
+                $('.side-nav-list').removeClass('tghh'); 
+                $('.side-nav-list').addClass('xyz'); 
+                
+                               
+            }else{
+                $('.side-nav-list').removeClass('xyz');                 
+                $('.side-nav-list').addClass('tghh');  
+            }
+
+            if($('.tgh').hasClass("fa-bars")){
+                $('.tgh').removeClass("fa-bars fa-2x");
+                $('.tgh').addClass('fa-times');
+            }else{
+                $('.tgh').removeClass('fa-times');                
+                $('.tgh').addClass("fa-bars ");
+            }
+            
+            });
+        // Selection of restaurants
+        $('#dd').on('click', function (e) {
+            e.preventDefault()
+        })
+        var results = function () {
+            var order = {}
+            order.name = $('#name').val()
+            order.servicetype = $('#select-restaurant').val()
+            order.restaurants = $('#preferred-rest').val()
+            order.phone = $('#phone').val()
+            order.requirements = $('#requirements').val()
+
+            console.log(order);
+        }
+
+
+
+
+        $('.btn-toggle').on('click', function (e) {
+            e.preventDefault();
+            $(this).find('.btn').toggleClass('active');
+
+            if ($(this).find('.btn-primary')) {
+                $(this).find('.btn').toggleClass('btn-primary');
+            }
+
+            $(this).find('.btn').toggleClass('btn-default');
+
+        });
+
+        // Mobile phone number
+        var telInput = $("#phone"), errorMsg = $("#error-msg"), validMsg = $("#valid-msg");
+        telInput.intlTelInput({
+
+            initialCountry: "auto",
+            geoIpLookup: function (callback) {
+                $.get('https://ipinfo.io', function () { }, "jsonp").always(function (resp) {
+                    var countryCode = (resp && resp.country) ? resp.country : "";
+                    callback(countryCode);
+                });
+            },
+            onlyCountries: ['cm'],
+            utilsScript: "js/utils.js" // just for formatting/placeholders etc
+        });
+        var reset = function () {
+            telInput.removeClass("error");
+            errorMsg.addClass("hide");
+            validMsg.addClass("hide");
+        };
+        // on blur: validate
+        telInput.blur(function () {
+            reset();
+            if ($.trim(telInput.val())) {
+                if (telInput.intlTelInput("isValidNumber")) {
+                    validMsg.removeClass("hide");
+                } else {
+                    telInput.addClass("error");
+                    errorMsg.removeClass("hide");
+                }
+            }
+        });
+
+        // on keyup / change flag: reset
+        telInput.on("keyup change", reset);
+
+        //SelectizeJS settings 
+        $('#select-restaurant').selectize({
+            plugins: ['remove_button'],
+            delimiter: ',',
+            persist: false,
+            create: function (input) {
+                return {
+                    value: input,
+                    text: input
+                }
+            }
+
+        });
+        //addrrrrrrrrrrrrrrrrrrrrrrrrrress
+        $('#address').on('change', function(){
+        $('#addr').html($('#address').val() )
+        });
+        $('.fa-edit').click(function(e){
+            e.preventDefault();
+            $('#address').fadeIn(200);
+             $('#address-view').fadeOut(200)
+
+        })
+        $('#address').blur(function(){
+        $(this).fadeOut(200);
+        $('#address-view').fadeIn(200)
+        })
+
+        //for order
+        $('#requirements').selectize({
+            plugins: ['remove_button'],
+            delimiter: ',',
+            persist: false,
+            create: function (input) {
+                return {
+                    value: input,
+                    text: input
+                }
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>
